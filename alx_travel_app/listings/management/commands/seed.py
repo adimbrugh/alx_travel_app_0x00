@@ -1,10 +1,15 @@
+
+
 from django.core.management.base import BaseCommand
 from listings.models import Listing
 from faker import Faker
 import random
 from datetime import timedelta, date
 
+
+
 fake = Faker()
+
 
 class Command(BaseCommand):
     help = 'Seed the database with sample listing data'
