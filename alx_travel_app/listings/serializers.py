@@ -5,7 +5,7 @@ from .models import Listing, Booking, Review
 
 
 
-class ListingSerializer(serializers.ModelSerializer):
+class ListingSerializers(serializers.ModelSerializer):
     class Meta:
         model = Listing
         fields = '__all__'
@@ -22,14 +22,14 @@ class ListingSerializer(serializers.ModelSerializer):
         ]
         
 
-class BookingSerializer(serializers.ModelSerializer):
+class BookingSerializers(serializers.ModelSerializer):
     class Meta:
         model = Booking
         fields = '__all__'
         read_only_fields = ('created_at', 'updated_at')
         
 
-class ReviewSerializer(serializers.ModelSerializer):
+class ReviewSerializers(serializers.ModelSerializer):
     class Meta:
         model = Review
         fields = '__all__'
