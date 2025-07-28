@@ -15,6 +15,5 @@ The alxtravelapp project is a real-world Django application that serves as the f
 Python 3
 Django 5
 Django REST Framework
-PostgreSQL or SQLite 
+PostgreSQL or SQLite
 Faker (for seeding)
-
